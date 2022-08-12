@@ -1,0 +1,60 @@
+.modal_window_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    &.opened {
+        visibility: visible;
+    }
+
+    .modal_holder {
+        background-color: white;
+        width: 90%;
+        max-width: 460px;
+        border-radius: 10px;
+        position: relative;
+
+        .modal_holder_items {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            .modal_holder_item {
+                padding: 1rem;
+                text-align: center;
+                border-bottom: 1px solid #aaa;
+
+                &:last-child {
+                    border: 0;
+                }
+
+                &.danger {
+                    color: tomato;
+                }
+            }
+        }
+
+        .close_button {
+            position: absolute;
+            top: -1rem;
+            right: -1rem;
+            color: white;
+
+            @media screen and (max-width: 700px) {
+                display: none;
+            }
+     
+
+            .fa {}
+        }
+    }
+
+}

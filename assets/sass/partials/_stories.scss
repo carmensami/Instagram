@@ -1,0 +1,56 @@
+.stories{
+    width: 95%;
+    max-width: 1080px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+
+    .story {
+        margin-right: 4rem;
+        //width: 87px;
+        //height: 111px;
+        flex-shrink: 0;
+
+        @media screen and (max-width: 700px) { 
+            margin-right: 2rem;
+            
+        } 
+
+        .story_pic{
+            border: 2px solid #ddd;
+            padding: 3px;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+
+            @media screen and (max-width: 700px) { 
+                width: 80px;
+                height: 80px;
+            } 
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: cover;
+            }
+        }
+
+        .name{
+            margin-top: 0.5rem;
+            text-align: center;
+            
+            
+            h4{
+                font-weight: bold;
+            }
+        }
+    
+
+        &:last-child {
+            margin: 0
+        }
+    }
+}
+

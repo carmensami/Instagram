@@ -1,0 +1,26 @@
+html,
+body {
+    font-size: $base * 2;
+    font-family: $font_family_base;
+    line-height: $base * 3;
+    color: $body_color;
+    min-height: 100vh;
+
+    @media screen and (max-width: 700px) { 
+        font-size: $base * 2.1;
+    }
+}
+
+h2{
+    margin-bottom: 0;
+}
+h4{
+    //font-size: 14px;
+    //font-weight: normal;
+    margin-bottom: 0;
+}
+
+p{
+    //font-size: 14px;
+    //margin-bottom: 0;
+}

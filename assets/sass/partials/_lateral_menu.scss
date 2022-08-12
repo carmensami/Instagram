@@ -1,0 +1,86 @@
+.mobile_navigation{
+    position: fixed;
+    top: 55.19px;
+    right: 0;
+    //height: calc(100%-62px);
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    padding: 1rem;
+    border-left: 2px solid #e1e1e1;
+    transform: translateX(100%);
+    transition: transform 350ms ease;
+    display: none;
+
+    &.opened{
+        transform: translateX(0); 
+        transition: transform 350ms ease;
+    }
+
+    @media screen and (max-width: 700px) {
+        display: block;
+    }
+
+    .mobile_searchbox{
+        padding: 0;
+        margin-bottom: 1rem;
+        
+        
+        form{
+            padding: 0 0 .5;
+            justify-content: flex-start;
+            border: 0;
+            border-bottom: 1px solid #e1e1e1;
+
+            .fa{
+                color: #9B9B9B;
+            }
+            input{
+                border: 0;
+            }
+        }
+    }
+    .main_navigation{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            margin-bottom: 0.5rem;
+            
+            a{
+                display: flex;
+                align-items: center;
+                color: inherit;
+                .icon{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    svg{
+
+                    }
+                    .label{
+                        margin-left: 0.5rem;
+                    }
+
+                    .bubble_notification{
+                        position: absolute;
+                        top: -0.2rem;
+                        right: -0.7rem;
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        font-size: .6rem;
+                        color: salmon;
+                        visibility: hidden;
+
+                        &.active{
+                            visibility: visible;
+                        }
+                        .fa{}
+                    }
+                }
+               
+            }
+        }
+    }
+}

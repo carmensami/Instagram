@@ -1,0 +1,24 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+$corporateColor: tomato;
+
+* {
+    //border: 1px solid $corporateColor;
+}
+
+
+
+@import 'partials/header';
+@import 'partials/typo';
+@import 'partials/section_user';
+@import 'partials/stories';
+@import 'partials/posts';
+@import 'partials/modal_window';
+@import 'partials/button';
+@import 'partials/lateral_menu';
